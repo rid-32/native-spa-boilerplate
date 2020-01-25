@@ -21,7 +21,17 @@ const handlebarsLoader = {
 
 const styleLoader = {
   test: /\.css$/,
-  use: ['css-loader', 'postcss-loader'],
+  use: [
+    'css-loader',
+    {
+      loader: 'postcss-loader',
+      options: {
+        config: {
+          path: path.join(__dirname, 'postcss.config.js'),
+        },
+      },
+    },
+  ],
 };
 
 const jsxLoader = {
