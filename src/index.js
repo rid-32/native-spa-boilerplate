@@ -1,3 +1,3 @@
 const root = document.getElementById('root');
 
-root.innerHTML = 'Hello World';
+root.innerHTML = 'Hello World!';
