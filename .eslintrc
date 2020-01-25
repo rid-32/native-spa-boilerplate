@@ -6,6 +6,7 @@
     },
     "globals": {
       "__dirname": true,
+      "process": true,
     },
     "extends": ["eslint:recommended", "eslint-config-prettier"],
     "parser": "babel-eslint",
